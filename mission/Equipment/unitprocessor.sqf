@@ -2,6 +2,8 @@ _unit = _this select 0;
 _faction = _this select 1;
 _loadout = _this select 2;
 
+#include "medprocessor.hpp"
+
 _item_processor = {
 	removeAllItems _this;
 	removeAllWeapons _this;
@@ -28,3 +30,6 @@ if (isNil _svn) then
 };
 
 [_unit] call (missionNamespace getVariable [_svn, {}]);
+
+_unit call _BaseMed_processor;
+//_unit call _MedBackPack_processor;
