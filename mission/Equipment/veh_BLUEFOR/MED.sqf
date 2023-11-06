@@ -1,7 +1,8 @@
 _veh = _this select 0;
-
+// Solid Games
 // чтобы добавить снарягу с этого файла в технику нужно прописать в инициализацию техники (без внешних кавычек): "[this,"BLUEFOR","MED"] call SerP_vehprocessor;"
 // cнаряжение и патроны, заряжающиеся через ACE меню) (["класснейм ресурса",кол-во ресурсов])
+
 _veh addItemcargoGlobal ["ACE_morphine",12];
 _veh addItemcargoGlobal ["ACE_epinephrine",12];
 _veh addItemcargoGlobal ["ACE_fieldDressing",20]; 
